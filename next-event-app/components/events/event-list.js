@@ -7,7 +7,7 @@ const EventList=(props)=>{
     
     return(
         <ul className={classes.list}>
-            {items.map(event=><EventItem
+            {items.map((event)=>(<EventItem
                 key={event.id}
                 id={event.id}
                 title={event.title}
@@ -15,7 +15,7 @@ const EventList=(props)=>{
                 date={event.date}
                 image={event.image}
 
-            />)}
+            />))}
         </ul>
     )
 }
